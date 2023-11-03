@@ -1,4 +1,4 @@
-Project for csci410 Lebanes International University.
+Project for csci410 Lebanese International University.
 It demonstrates the use of flutter:
 - dropdownmenu widget
 - radio buttons
