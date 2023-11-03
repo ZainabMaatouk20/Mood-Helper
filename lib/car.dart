@@ -53,7 +53,7 @@ to the home page.
   @override
   Widget build(BuildContext context) {
     return DropdownMenu(
-        width: 200.0,
+        width: 210.0,
         initialSelection: cars[0], // first car to be displayed
         onSelected: (car) {
           setState(() {
