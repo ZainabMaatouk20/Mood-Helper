@@ -73,8 +73,9 @@ class WarrantyWidget extends StatefulWidget {
   It includes a callback method called updateWarranty, to return the years to
   home page.
    */
-  const WarrantyWidget({required this.updateWarranty, super.key});
+  WarrantyWidget({required this.car, required this.updateWarranty, super.key});
   final Function(int) updateWarranty;
+  Car car;
 
   @override
   State<WarrantyWidget> createState() => WarrantyWidgetState();
@@ -90,7 +91,7 @@ class WarrantyWidgetState extends State<WarrantyWidget> {
       const Text('Warranty', style: TextStyle(fontSize: 18.0),),
       Radio(
         value: 1,
-        groupValue: _years, // all radio buttons in the same group should share a common variable
+        groupValue: widget.car.warranty, // all radio buttons in the same group should share a common variable
         onChanged: (val) {
           setState(() {
             _years = val as int;
@@ -101,7 +102,7 @@ class WarrantyWidgetState extends State<WarrantyWidget> {
       const Text('1 year', style: TextStyle(fontSize: 18.0)),
       Radio(
         value: 5,
-        groupValue: _years, // all radio buttons in the same group should share a common variable
+        groupValue: widget.car.warranty, // all radio buttons in the same group should share a common variable
         onChanged: (val) {
           setState(() {
             _years = val as int;

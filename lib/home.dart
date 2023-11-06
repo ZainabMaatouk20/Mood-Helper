@@ -25,7 +25,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   String totalPrice = cars.first.getTotalPrice(); // holds total car price
   Car car = cars.first; // set the first car to be displayed
-  bool insurance = false; // holds insurance value and the default, is no insurance
 
   void updateCar(Car car) {
     // updates car price when the user selects a car form the dropdown
@@ -57,16 +56,15 @@ class _HomeState extends State<Home> {
               const SizedBox(height: 10.0),
               MyDropdownMenuWidget(updateCar: updateCar),
               const SizedBox(height: 10.0),
-              WarrantyWidget(updateWarranty: updateWarranty),
+              WarrantyWidget(updateWarranty: updateWarranty, car: car),
               const SizedBox(height: 10.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text('Insurance', style: TextStyle(fontSize: 18.0)),
-                  Checkbox(value: insurance, onChanged: (bool? value) {
+                  Checkbox(value: car.insurance, onChanged: (bool? value) {
                     setState(() {
-                      insurance = value as bool;
-                      car.insurance = insurance;
+                      car.insurance = value as bool;
                       totalPrice = car.getTotalPrice();
                   });
               })]),
