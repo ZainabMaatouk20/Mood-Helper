@@ -8,10 +8,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:csci410week6/main.dart';
+import 'package:mood_helper/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
@@ -26,5 +26,11 @@ void main() {
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
+  });
+
+   testWidgets('App starts with HomeScreen', (WidgetTester tester) async {
+    await tester.pumpWidget(const MyApp());
+
+    expect(find.text('Welcome to Mood Helper'), findsOneWidget);
   });
 }
