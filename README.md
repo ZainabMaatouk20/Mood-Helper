@@ -1,8 +1,7 @@
-Project for csci410 Lebanese International University.
-It demonstrates the use of flutter:
-- dropdownmenu widget
-- radio buttons
-- checkboxes
+MoodHelper is a Flutter-based mobile application designed to help users manage depression and anger issues through:
+~Mood tracking with motivational quotes.
+~Guided breathing exercises.
+~Anger management tips.
+~Suggestions for calming music.
+This project is simple, creative, and does not require a database, making it a perfect tool for users seeking immediate emotional support.
 
-The application will allow the user to select car model, warranty years and add insurance. It will
-calculate the total car price.
