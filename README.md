@@ -16,7 +16,6 @@ Mood Helper is a Flutter-based application designed to promote emotional well-be
 ## **Project Structure**
 This project is organized into several files under the `lib/` directory. Below is an overview of each file with its purpose.
 
-
 ---
 
 ### **`main.dart`**
@@ -95,7 +94,10 @@ This project is organized into several files under the `lib/` directory. Below i
   - `ListTile`: Represents individual music suggestions with a clickable title.
 
 ---
-
+## **Credits**
+- Zainab Ibrahim Maatouk
+- LIU Nabatieh 
+- Inspired by mindfulness and emotional well-being practices.
 ## **Getting Started**
 
 ### **1. Prerequisites**
