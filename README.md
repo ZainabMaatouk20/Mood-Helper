@@ -94,11 +94,14 @@ This project is organized into several files under the `lib/` directory. Below i
   - `ListTile`: Represents individual music suggestions with a clickable title.
 
 ---
+
 ## **Credits**
 - Zainab Ibrahim Maatouk
 - LIU Nabatieh 
 - Inspired by mindfulness and emotional well-being practices.
 ## **Getting Started**
+
+---
 
 ### **1. Prerequisites**
 - Install Flutter: [Flutter Installation Guide](https://flutter.dev/docs/get-started/install)
