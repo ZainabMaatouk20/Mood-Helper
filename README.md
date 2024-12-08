@@ -104,8 +104,6 @@ This project is organized into several files under the `lib/` directory. Below i
 ---
 
 ## **Getting Started**
----
-
 ### **1. Prerequisites**
 - Install Flutter: [Flutter Installation Guide](https://flutter.dev/docs/get-started/install)
 - Ensure you have an emulator or a physical device connected.
