@@ -97,10 +97,13 @@ This project is organized into several files under the `lib/` directory. Below i
 
 ## **Credits**
 - Zainab Ibrahim Maatouk
-- LIU Nabatieh 
+- LIU Nabatieh
+- Email: 42320001@students.liu.edu.lb
 - Inspired by mindfulness and emotional well-being practices.
-## **Getting Started**
 
+---
+
+## **Getting Started**
 ---
 
 ### **1. Prerequisites**
